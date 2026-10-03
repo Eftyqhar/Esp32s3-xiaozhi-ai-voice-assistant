@@ -1,6 +1,6 @@
 # An MCP-based Chatbot
 
-（中文 | [English](README.md) | [日本語](README_ja.md)）
+（中文 | [English](README.md) | [বাংলা](README_bn.md) | [日本語](README_ja.md)）
 
 ## 介绍
 

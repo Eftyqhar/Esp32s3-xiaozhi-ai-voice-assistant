@@ -1,6 +1,6 @@
 # An MCP-based Chatbot
 
-(English | [中文](README_zh.md) | [日本語](README_ja.md))
+(English | [বাংলা](README_bn.md) | [中文](README_zh.md) | [日本語](README_ja.md))
 
 ## Introduction
 
@@ -28,9 +28,9 @@ The stable version of v1 is 1.9.2. You can switch to v1 by running `git checkout
 - Uses OPUS audio codec
 - Voice interaction based on streaming ASR + LLM + TTS architecture
 - Speaker recognition, identifies the current speaker [3D Speaker](https://github.com/modelscope/3D-Speaker)
-- OLED / LCD display, supports emoji display
+- OLED / LCD display, supports emoji display and interactive Mochi Face animations
 - Battery display and power management
-- Multi-language support (Chinese, English, Japanese)
+- Multi-language support (Chinese, English, Japanese, and Bengali `bn-BD` with real-time Banglish OLED rendering)
 - Supports ESP32-C3, ESP32-S3, ESP32-P4 chip platforms
 - Device-side MCP for device control (Speaker, LED, Servo, GPIO, etc.)
 - Cloud-side MCP to extend large model capabilities (smart home control, PC desktop operation, knowledge search, email, etc.)
@@ -40,7 +40,9 @@ The stable version of v1 is 1.9.2. You can switch to v1 by running `git checkout
 
 ### Breadboard DIY Practice
 
-See the Feishu document tutorial:
+👉 [**DIY Breadboard Hardware & Wiring Guide**](docs/diy-breadboard-guide.md) - Complete pinout and setup for ESP32-S3 + INMP441 + MAX98357A + SSD1306 (`bread-compact-wifi`).
+
+See also the Feishu tutorial:
 
 👉 ["XiaoZhi AI Chatbot Encyclopedia"](https://ccnphfhqs21z.feishu.cn/wiki/F5krwD16viZoF0kKkvDcrZNYnhb?from=from_copylink)
 
@@ -121,6 +123,7 @@ The firmware connects to the official [xiaozhi.me](https://xiaozhi.me) server by
 
 ### Developer Documentation
 
+- [DIY Breadboard Guide](docs/diy-breadboard-guide.md) - Pinouts, wiring diagram, and assembly for bread-compact-wifi
 - [Custom Board Guide](docs/custom-board.md) - Learn how to create custom boards for XiaoZhi AI
 - [MCP Protocol IoT Control Usage](docs/mcp-usage.md) - Learn how to control IoT devices via MCP protocol
 - [MCP Protocol Interaction Flow](docs/mcp-protocol.md) - Device-side MCP protocol implementation
